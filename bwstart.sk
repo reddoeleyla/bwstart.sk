@@ -1,0 +1,28 @@
+command /start:
+    permission: sk.bs
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make player execute command "bw start"
+        send "&b&lSKRIPT &7Hai diminuito il cooldown a &a5 &csecondi"
+
+
+
+
+command /fstart:
+    permission: sk.fs
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make player execute command "bw forcestart"
+        send "&b&lSKRIPT &7Hai forzato il diminuimento del cooldown a &a5 &csecondi"
+
+
+
+
+command /reloadstart:
+    permission: sk.rs 
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    aliases: /rs 
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make player execute command "sk reload bwstart.sk"
+        send "&b&lSKRIPT &7Hai ricaricato il bwstart"
